@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New file storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> مرحبا بك في برنامج تخزين الملفات</h1>
+        <h1> يجب اولا تخزين البيانات قبل نسخها </h1>
+        <!-- رفع الملفات -->
+        <input type="file" id="fileInput" multiple>
+        <div class="buttons">
+            <button id="storeBtn">تخزين الملفات مؤقتاً</button>
+            <button id="copyBtn">نسخ الملفات</button>
+            <button id="downloadBtn">تحميل الملفات المنسوخة</button>
+            <button id="clearBtn">مسح الملفات</button>
+        </div>
+
+        <!-- عرض الملفات المخزنة -->
+        <h3>الملفات المخزنة مؤقتاً:</h3>
+        <div id="storedFiles"></div>
+
+        <!-- عرض الملفات المنسوخة -->
+        <h3>الملفات المنسوخة:</h3>
+        <div id="copiedFiles"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
